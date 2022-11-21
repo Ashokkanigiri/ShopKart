@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, HomeDataRepository, CategoryClickedHandler {
+class HomeViewController: UIViewController, HomeDataRepository, CategoryClickedHandler {
     
         
     @IBOutlet weak var homeTableView: UITableView!
@@ -27,11 +27,7 @@ class ViewController: UIViewController, HomeDataRepository, CategoryClickedHandl
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.hero.isEnabled = true
-        
-        RestClient.request()
-        
+                        
         homeDataRepoImpl.homeDataRepo = self
         homeDataRepoImpl.getAllProducts()
         
@@ -42,7 +38,7 @@ class ViewController: UIViewController, HomeDataRepository, CategoryClickedHandl
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == AppConstants.NavigationConstants.CATEGORY_DETAIL_NAVIGATION){
-            (segue.destination as! CategoryDetailViewController).categoryDetailName = selectedCategoryName
+            (segue.destination as! ProductListViewController).categoryDetailName = selectedCategoryName
         }
         
     }
@@ -67,7 +63,7 @@ class ViewController: UIViewController, HomeDataRepository, CategoryClickedHandl
 }
 
 
-extension ViewController : UITableViewDataSource {
+extension HomeViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         productsList?.count ?? 0

@@ -7,11 +7,11 @@
 
 import UIKit
 
-class CategoryDetailViewController : UIViewController , CategoryDetailClickedHandler{
+class ProductListViewController : UIViewController , ProductListClickHandler{
     
     var productsList: Array<Product>? = nil
     var categoryDetailName : String? = nil
-    var repo = CategoryDetailRepository()
+    var repo = ProductListRepository()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -28,7 +28,7 @@ class CategoryDetailViewController : UIViewController , CategoryDetailClickedHan
         tableView.register(UINib(nibName: "CategoryDetailCell", bundle: nil), forCellReuseIdentifier: "categoryDetailCell")
     }
     
-    func productClicked(productId: Int) {
+    func onProductClicked(productId: Int) {
         
     }
     
@@ -39,7 +39,7 @@ class CategoryDetailViewController : UIViewController , CategoryDetailClickedHan
     
 }
 
-extension CategoryDetailViewController : UITableViewDataSource{
+extension ProductListViewController : UITableViewDataSource{
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
