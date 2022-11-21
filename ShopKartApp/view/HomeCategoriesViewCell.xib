@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeCategoriesViewCell" customModule="ShopKartApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="KGk-i7-Jjw" customClass="HomeCategoriesViewCell" customModule="ShopKartApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="229"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="229"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKo-Wv-VEa">
+                        <rect key="frame" x="0.0" y="0.0" width="427" height="230"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XiH-37-GI9">
+                                <rect key="frame" x="5" y="5" width="417" height="220"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jPA-xq-2ln">
+                                        <rect key="frame" x="0.0" y="0.0" width="417" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMe-DW-7KI">
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="107.5"/>
+                                                <color key="tintColor" red="0.0029040638780000001" green="0.86078917980000003" blue="0.03731992168" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Electronics"/>
+                                                <connections>
+                                                    <action selector="electronicsCategoryClickedHandler:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="e3M-NY-jo8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOj-yP-7rN">
+                                                <rect key="frame" x="211" y="0.0" width="206" height="107.5"/>
+                                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Jewelery"/>
+                                                <connections>
+                                                    <action selector="JeweleryCategoryClickedHandler:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9zj-Po-pEc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bgk-L0-BW8">
+                                        <rect key="frame" x="0.0" y="112.5" width="417" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6i-g0-COn">
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="107.5"/>
+                                                <color key="tintColor" systemColor="systemBrownColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Men's clothing"/>
+                                                <connections>
+                                                    <action selector="MenClothingClickedHandler:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6wR-mV-8dQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAg-La-uxF">
+                                                <rect key="frame" x="211" y="0.0" width="206" height="107.5"/>
+                                                <color key="tintColor" systemColor="tintColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Women's clothing"/>
+                                                <connections>
+                                                    <action selector="WomenClothingClickedHandler:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8zN-r0-0tu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XiH-37-GI9" secondAttribute="bottom" constant="5" id="6Qj-yA-i8s"/>
+                            <constraint firstAttribute="trailing" secondItem="XiH-37-GI9" secondAttribute="trailing" constant="5" id="Dcf-H9-mVT"/>
+                            <constraint firstItem="XiH-37-GI9" firstAttribute="leading" secondItem="UKo-Wv-VEa" secondAttribute="leading" constant="5" id="ZDE-cP-MdI"/>
+                            <constraint firstAttribute="height" constant="230" id="m8V-1i-NfA"/>
+                            <constraint firstItem="XiH-37-GI9" firstAttribute="top" secondItem="UKo-Wv-VEa" secondAttribute="top" constant="5" id="sbH-8c-yhU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="UKo-Wv-VEa" secondAttribute="trailing" id="192-w6-FTm"/>
+                    <constraint firstItem="UKo-Wv-VEa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2Pa-4z-SZz"/>
+                    <constraint firstAttribute="bottom" secondItem="UKo-Wv-VEa" secondAttribute="bottom" id="Os0-wW-J9I"/>
+                    <constraint firstItem="UKo-Wv-VEa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZZi-Sk-XdJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <accessibility key="accessibilityConfiguration" identifier="homeCategoriesViewCell"/>
+            <connections>
+                <outlet property="eb" destination="nMe-DW-7KI" id="yxG-h5-gRg"/>
+            </connections>
+            <point key="canvasLocation" x="-93.478260869565219" y="111.49553571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
