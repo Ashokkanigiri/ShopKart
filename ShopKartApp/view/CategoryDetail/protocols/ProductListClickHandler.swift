@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CategoryDetailClickedHandler {
-    func productClicked(productId: Int)
+protocol ProductListClickHandler {
+    func onProductClicked(productId: Int)
     func getAllProductsByCategory(productsList : Array<Product>)
 }

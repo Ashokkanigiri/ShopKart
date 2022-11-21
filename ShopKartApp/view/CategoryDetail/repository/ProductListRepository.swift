@@ -8,9 +8,9 @@
 import Foundation
 import Alamofire
 
-class CategoryDetailRepository {
+class ProductListRepository {
     
-    var categoryDetailClickedHandler : CategoryDetailClickedHandler? = nil
+    var categoryDetailClickedHandler : ProductListClickHandler? = nil
     
     func getAllProductsByCategory(categoryName: String) {
         let url = "https://fakestoreapi.com/products/category/" + categoryName
