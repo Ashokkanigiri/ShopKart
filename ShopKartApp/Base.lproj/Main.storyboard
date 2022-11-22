@@ -78,18 +78,66 @@
         <!--Profile-->
         <scene sceneID="UWa-Te-SBq">
             <objects>
-                <viewController id="tIa-SF-hZ5" sceneMemberID="viewController">
+                <viewController id="tIa-SF-hZ5" customClass="ProfileScreenController" customModule="ShopKartApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I8H-8r-lra">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="b5C-cu-8g6">
+                                <rect key="frame" x="15" y="103" width="384" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWp-GX-8Em">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TTk-hT-Tt6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="My Orders"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAT-1w-Lcj">
+                                        <rect key="frame" x="202" y="0.0" width="182" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="My Cart"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owA-uh-n34">
+                                <rect key="frame" x="20" y="173" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gPa-3H-d6T"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="User Profile"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of8-Kn-KRo">
+                                <rect key="frame" x="20" y="243" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wcx-ly-4BF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="App Settings"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KZq-NV-iif"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KZq-NV-iif" firstAttribute="trailing" secondItem="of8-Kn-KRo" secondAttribute="trailing" constant="20" id="4uR-zP-Qo9"/>
+                            <constraint firstItem="KZq-NV-iif" firstAttribute="trailing" secondItem="b5C-cu-8g6" secondAttribute="trailing" constant="15" id="ExV-UN-l14"/>
+                            <constraint firstItem="of8-Kn-KRo" firstAttribute="leading" secondItem="KZq-NV-iif" secondAttribute="leading" constant="20" id="N2r-Vy-BV5"/>
+                            <constraint firstItem="of8-Kn-KRo" firstAttribute="top" secondItem="owA-uh-n34" secondAttribute="bottom" constant="20" id="QcC-Pv-nDG"/>
+                            <constraint firstItem="owA-uh-n34" firstAttribute="top" secondItem="b5C-cu-8g6" secondAttribute="bottom" constant="20" id="UV4-q0-YiK"/>
+                            <constraint firstItem="KZq-NV-iif" firstAttribute="trailing" secondItem="owA-uh-n34" secondAttribute="trailing" constant="20" id="ac5-oF-siS"/>
+                            <constraint firstItem="owA-uh-n34" firstAttribute="leading" secondItem="KZq-NV-iif" secondAttribute="leading" constant="20" id="cP8-VE-TL2"/>
+                            <constraint firstItem="b5C-cu-8g6" firstAttribute="leading" secondItem="KZq-NV-iif" secondAttribute="leading" constant="15" id="nHf-ho-GXu"/>
+                            <constraint firstItem="b5C-cu-8g6" firstAttribute="top" secondItem="KZq-NV-iif" secondAttribute="top" constant="15" id="tjT-Us-VNJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="7gu-Pq-Ie4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5U-TT-keP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="795"/>
+            <point key="canvasLocation" x="928.98550724637687" y="794.86607142857144"/>
         </scene>
         <!--Product List View Controller-->
         <scene sceneID="LgG-Q8-aGh">
@@ -343,6 +391,9 @@
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
