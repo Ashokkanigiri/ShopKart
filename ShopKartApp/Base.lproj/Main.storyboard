@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LF7-Fm-MkJ">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem title="Home" image="homekit" catalog="system" id="6rE-bE-0m1"/>
@@ -35,7 +35,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Search"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aWH-7R-fYz">
-                                <rect key="frame" x="0.0" y="129" width="414" height="684"/>
+                                <rect key="frame" x="0.0" y="129" width="414" height="650"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -144,6 +144,7 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="D1t-OZ-Car"/>
+                                            <constraint firstAttribute="width" constant="206" id="Nmd-Qp-oJm"/>
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dw7-aw-6TJ">
@@ -217,6 +218,11 @@
                         <outlet property="productImage" destination="Frj-St-I1e" id="wgc-A1-pH7"/>
                         <outlet property="productPriceLabel" destination="upW-nT-duL" id="czJ-oW-3Xl"/>
                         <outlet property="productTitleLabel" destination="lBL-QU-iEm" id="dtg-hR-txz"/>
+                        <outlet property="starImg_1" destination="kpT-Rk-gMn" id="1Fu-lU-6wt"/>
+                        <outlet property="starImg_2" destination="hNw-t6-KLC" id="L4m-GV-Kfy"/>
+                        <outlet property="starImg_3" destination="xx9-CB-0v7" id="IKh-p3-JxR"/>
+                        <outlet property="starImg_4" destination="Hbj-ZI-ixH" id="p2u-oS-kEn"/>
+                        <outlet property="starImg_5" destination="Bkc-VC-Paz" id="rxW-OG-Iua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsM-6K-rRI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
