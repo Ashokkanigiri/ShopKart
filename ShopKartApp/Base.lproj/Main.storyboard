@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="llI-8B-5i6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c0C-W3-kKC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Kart-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="ShopKartApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,14 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LF7-Fm-MkJ">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Home" image="homekit" catalog="system" id="6rE-bE-0m1"/>
-                                    <tabBarItem systemItem="more" id="Aa5-Ne-sfT"/>
-                                </items>
-                            </tabBar>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-Wa-5t0">
                                 <rect key="frame" x="5" y="88" width="414" height="51"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,28 +27,25 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Search"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aWH-7R-fYz">
-                                <rect key="frame" x="0.0" y="129" width="414" height="650"/>
+                                <rect key="frame" x="0.0" y="129" width="414" height="684"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="LF7-Fm-MkJ" secondAttribute="trailing" id="Fro-rd-wMy"/>
                             <constraint firstItem="VSv-Wa-5t0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="5" id="Fwm-1y-Sud"/>
                             <constraint firstItem="aWH-7R-fYz" firstAttribute="top" secondItem="7ep-YH-aCW" secondAttribute="bottom" id="H9m-P9-DXO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LF7-Fm-MkJ" secondAttribute="bottom" id="NTn-uk-VtT"/>
                             <constraint firstItem="VSv-Wa-5t0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="TK4-rd-j1j"/>
                             <constraint firstItem="VSv-Wa-5t0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wvg-LE-a4M"/>
                             <constraint firstItem="7ep-YH-aCW" firstAttribute="centerY" secondItem="VSv-Wa-5t0" secondAttribute="centerY" id="byY-BR-5Sj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aWH-7R-fYz" secondAttribute="bottom" id="ffd-qN-Z04"/>
                             <constraint firstItem="aWH-7R-fYz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iyt-6Q-p5d"/>
                             <constraint firstAttribute="trailing" secondItem="aWH-7R-fYz" secondAttribute="trailing" id="oud-2k-33F"/>
-                            <constraint firstItem="LF7-Fm-MkJ" firstAttribute="top" secondItem="aWH-7R-fYz" secondAttribute="bottom" id="riV-qI-lLu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7ep-YH-aCW" secondAttribute="trailing" constant="5" id="yme-aX-6pK"/>
-                            <constraint firstItem="LF7-Fm-MkJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zI6-bP-n93"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Kart" id="J2l-YE-WfT">
+                    <navigationItem key="navigationItem" title="Home" id="J2l-YE-WfT">
                         <barButtonItem key="rightBarButtonItem" title="Filter" id="ltQ-EE-3Db"/>
                     </navigationItem>
                     <connections>
@@ -68,6 +57,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="65.625"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="WjG-B4-lsu">
+            <objects>
+                <navigationController id="Pfb-R9-z6Z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="GQF-3H-DV7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2SJ-Mk-a9H">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tIa-SF-hZ5" kind="relationship" relationship="rootViewController" id="vnp-GB-FuB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7k6-Pz-v77" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="813"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="UWa-Te-SBq">
+            <objects>
+                <viewController id="tIa-SF-hZ5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I8H-8r-lra">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KZq-NV-iif"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="7gu-Pq-Ie4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5U-TT-keP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="795"/>
         </scene>
         <!--Product List View Controller-->
         <scene sceneID="LgG-Q8-aGh">
@@ -228,7 +250,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="iQK-PA-X5a"/>
                             </scrollView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="djh-Pf-zxe">
-                                <rect key="frame" x="15" y="792" width="384" height="50"/>
+                                <rect key="frame" x="15" y="743" width="384" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6C-O2-MG3">
                                         <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
@@ -273,10 +295,30 @@
             </objects>
             <point key="canvasLocation" x="2547.826086956522" y="65.625"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="UOl-BT-pEv">
+            <objects>
+                <tabBarController id="c0C-W3-kKC" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cq4-wl-3je">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="llI-8B-5i6" kind="relationship" relationship="viewControllers" id="qoY-H4-Bii"/>
+                        <segue destination="Pfb-R9-z6Z" kind="relationship" relationship="viewControllers" id="gdS-t9-TMF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hl-dB-epo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-904" y="66"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="fxB-nm-MRZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="llI-8B-5i6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="EoR-iu-p9k"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jQE-H2-QUJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -297,7 +339,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
-        <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
