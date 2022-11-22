@@ -29,7 +29,7 @@ class ProductListViewController : UIViewController , ProductListClickHandler{
     }
     
     func onProductClicked(productId: Int) {
-        
+        self.performSegue(withIdentifier: "navigateToProductDetail", sender: self)
     }
     
     func getAllProductsByCategory(productsList: Array<Product>) {
@@ -49,8 +49,16 @@ extension ProductListViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "categoryDetailCell", for: indexPath) as! CategoryDetailCell
         
+        cell.productListClickHandler = self
+        
+        cell.productId = productsList?[indexPath.row].id ?? 0
+        
         cell.productTitle.text = productsList?[indexPath.row].title
-        cell.priceTitle.text = "\(productsList?[indexPath.row].price)"
+        
+        if let productPrice = productsList?[indexPath.row].price {
+            cell.priceTitle.text = "\(productPrice)"
+        }
+        
         cell.productImageView?.loadImage(urlString: (productsList?[indexPath.row].image)!)
         
         return cell

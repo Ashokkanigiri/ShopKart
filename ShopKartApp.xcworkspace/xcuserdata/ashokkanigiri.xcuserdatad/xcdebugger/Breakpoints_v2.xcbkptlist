@@ -180,5 +180,113 @@
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "547E8B6A-8DC4-4D1B-BBA0-E85F372D6E47"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShopKartApp/view/ProductListScreen/cells/CategoryDetailCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "CategoryDetailCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "547E8B6A-8DC4-4D1B-BBA0-E85F372D6E47 - cbe98b2321f24e20"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShopKartApp.CategoryDetailCell.priceTitle.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ShopKartApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashokkanigiri/Documents/Development/IOS%20App%20Development/p-2/ShopKartApp/ShopKartApp/view/ProductListScreen/cells/CategoryDetailCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "547E8B6A-8DC4-4D1B-BBA0-E85F372D6E47 - 336dbad7529b95dc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShopKartApp.CategoryDetailCell.priceTitle.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ShopKartApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashokkanigiri/Documents/Development/IOS%20App%20Development/p-2/ShopKartApp/ShopKartApp/view/ProductListScreen/cells/CategoryDetailCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "547E8B6A-8DC4-4D1B-BBA0-E85F372D6E47 - 27758cf827f3511f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShopKartApp.CategoryDetailCell.priceTitle.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ShopKartApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashokkanigiri/Documents/Development/IOS%20App%20Development/p-2/ShopKartApp/ShopKartApp/view/ProductListScreen/cells/CategoryDetailCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "547E8B6A-8DC4-4D1B-BBA0-E85F372D6E47 - a3a1810396c73bd7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShopKartApp.CategoryDetailCell.priceTitle.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ShopKartApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashokkanigiri/Documents/Development/IOS%20App%20Development/p-2/ShopKartApp/ShopKartApp/view/ProductListScreen/cells/CategoryDetailCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "547E8B6A-8DC4-4D1B-BBA0-E85F372D6E47 - 63f5f32507f85c41"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShopKartApp.CategoryDetailCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; ShopKartApp.CategoryDetailCell"
+                  moduleName = "ShopKartApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashokkanigiri/Documents/Development/IOS%20App%20Development/p-2/ShopKartApp/ShopKartApp/view/ProductListScreen/cells/CategoryDetailCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "547E8B6A-8DC4-4D1B-BBA0-E85F372D6E47 - 3bc073e78d24b120"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShopKartApp.CategoryDetailCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ShopKartApp.CategoryDetailCell&gt;"
+                  moduleName = "ShopKartApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashokkanigiri/Documents/Development/IOS%20App%20Development/p-2/ShopKartApp/ShopKartApp/view/ProductListScreen/cells/CategoryDetailCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
