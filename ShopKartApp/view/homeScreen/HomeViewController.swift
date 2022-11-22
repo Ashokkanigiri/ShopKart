@@ -7,8 +7,9 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, HomeDataRepository, CategoryClickedHandler {
+class HomeViewController: UIViewController, HomeDataRepository, CategoryClickedHandler, ProductclickedHandler {
     
+    var selectedProductId = 0
         
     @IBOutlet weak var homeTableView: UITableView!
     
@@ -39,6 +40,9 @@ class HomeViewController: UIViewController, HomeDataRepository, CategoryClickedH
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == AppConstants.NavigationConstants.CATEGORY_DETAIL_NAVIGATION){
             (segue.destination as! ProductListViewController).categoryDetailName = selectedCategoryName
+        } else if (segue.identifier == "homeToProductDetail"){
+            var vc = segue.destination as! ProductDetailViewController
+            vc.selectedProductId = selectedProductId
         }
         
     }
@@ -57,7 +61,10 @@ class HomeViewController: UIViewController, HomeDataRepository, CategoryClickedH
         
     }
     
-    
+    func onProductClicked(productId: Int) {
+        self.selectedProductId = productId
+        self.performSegue(withIdentifier: "homeToProductDetail", sender: self)
+    }
 
 
 }
@@ -83,6 +90,10 @@ extension HomeViewController : UITableViewDataSource {
         
         cell.productTitle.text = productsList?[indexPath.row].title
         cell.productImageView?.loadImage(urlString: productsList?[indexPath.row].image ?? "")
+        
+        cell.productId = productsList?[indexPath.row].id ?? 0
+        cell.productClickedHandler = self
+       
         
         return cell
         

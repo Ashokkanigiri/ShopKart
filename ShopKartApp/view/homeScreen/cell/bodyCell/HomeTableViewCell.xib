@@ -28,24 +28,36 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmD-gk-wsx">
+                        <rect key="frame" x="0.0" y="0.0" width="572" height="532"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="cellClickedHandler:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Yv1-7z-xYT"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="IQH-1t-w5P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9b9-h4-SI2"/>
+                    <constraint firstItem="UmD-gk-wsx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="H1q-RY-T62"/>
                     <constraint firstItem="IQH-1t-w5P" firstAttribute="top" secondItem="JoU-Jg-OrH" secondAttribute="bottom" constant="20" id="Jvg-bD-myn"/>
                     <constraint firstAttribute="bottom" secondItem="IQH-1t-w5P" secondAttribute="bottom" constant="20" id="WKh-5X-7g4"/>
+                    <constraint firstItem="UmD-gk-wsx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZtN-Pt-0oi"/>
                     <constraint firstItem="JoU-Jg-OrH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bhr-xI-COL"/>
+                    <constraint firstAttribute="bottom" secondItem="UmD-gk-wsx" secondAttribute="bottom" id="csd-js-8v9"/>
                     <constraint firstAttribute="trailing" secondItem="IQH-1t-w5P" secondAttribute="trailing" constant="10" id="dwk-a1-Ctj"/>
                     <constraint firstItem="JoU-Jg-OrH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hmh-Gc-Inp"/>
+                    <constraint firstAttribute="trailing" secondItem="UmD-gk-wsx" secondAttribute="trailing" id="qdH-KT-Qfe"/>
                     <constraint firstAttribute="trailing" secondItem="JoU-Jg-OrH" secondAttribute="trailing" id="zZg-NH-icF"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <accessibility key="accessibilityConfiguration" identifier="homeTableViewCell"/>
             <connections>
-                <outlet property="productImageView" destination="JoU-Jg-OrH" id="2Ol-NP-cn1"/>
+                <outlet property="productImageView" destination="JoU-Jg-OrH" id="2U9-wg-YMM"/>
                 <outlet property="productTitle" destination="IQH-1t-w5P" id="IZ6-Hv-XvQ"/>
             </connections>
-            <point key="canvasLocation" x="313.04347826086956" y="246.42857142857142"/>
+            <point key="canvasLocation" x="311.59420289855075" y="246.42857142857142"/>
         </tableViewCell>
     </objects>
 </document>

@@ -9,10 +9,19 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
     
+    var productClickedHandler: ProductclickedHandler? = nil
+    
+    var productId: Int = 0
     
     @IBOutlet weak var productImageView: UIImageView!
     
     @IBOutlet weak var productTitle: UILabel!
+    
+    @IBAction func cellClickedHandler(_ sender: UIButton) {
+        
+        productClickedHandler?.onProductClicked(productId: productId)
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
