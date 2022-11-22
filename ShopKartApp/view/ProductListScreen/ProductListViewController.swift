@@ -11,6 +11,7 @@ class ProductListViewController : UIViewController , ProductListClickHandler{
     
     var productsList: Array<Product>? = nil
     var categoryDetailName : String? = nil
+    var selectedProductId: Int = 0
     var repo = ProductListRepository()
     
     @IBOutlet weak var tableView: UITableView!
@@ -29,6 +30,7 @@ class ProductListViewController : UIViewController , ProductListClickHandler{
     }
     
     func onProductClicked(productId: Int) {
+        selectedProductId = productId
         self.performSegue(withIdentifier: "navigateToProductDetail", sender: self)
     }
     
@@ -37,7 +39,16 @@ class ProductListViewController : UIViewController , ProductListClickHandler{
         tableView.reloadData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "navigateToProductDetail"){
+            var vc = segue.destination as! ProductDetailViewController
+            vc.selectedProductId = self.selectedProductId
+        }
+    }
+    
 }
+
+
 
 extension ProductListViewController : UITableViewDataSource{
     
