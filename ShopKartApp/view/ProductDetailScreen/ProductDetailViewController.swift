@@ -33,11 +33,16 @@ class ProductDetailViewController : UIViewController, ProductDetailDataProtocol{
     
     @IBOutlet weak var starImg_5: UIImageView!
     
+    @IBOutlet weak var ratingUsersCount: UILabel!
+    
     func getProductDetail(product: Product) {
         productTitleLabel.text = product.title
         productImage.loadImage(urlString: product.image)
         productPriceLabel.text = "Rs. \(product.price)"
         productDescriptionLabel.text = product.whetherAPIByCityResponseDescription
+        
+        ratingUsersCount.text = "\(product.rating.count) ratings"
+        
         loadRatings(rating: product.rating.rate)
     }
     
