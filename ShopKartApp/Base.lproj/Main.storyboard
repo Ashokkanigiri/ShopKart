@@ -308,11 +308,19 @@
                                         <color key="tintColor" systemColor="systemOrangeColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="cart" catalog="system" title="   Add to Cart"/>
+                                        <connections>
+                                            <action selector="addToCartButtonHandler:" destination="0tI-kZ-Ouj" eventType="touchUpInside" id="BkD-Jm-T84"/>
+                                            <segue destination="Uwf-kV-7I6" kind="show" identifier="navigateToCartScreen" id="kXB-vz-mgo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FC-id-Cbf">
                                         <rect key="frame" x="197" y="0.0" width="187" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Buy Now"/>
+                                        <connections>
+                                            <action selector="buyNowButtonHandler:" destination="0tI-kZ-Ouj" eventType="touchUpInside" id="NOL-Bk-Su5"/>
+                                            <segue destination="NZe-Kj-u7p" kind="show" identifier="navigateToOrdersScreen" id="ROM-c9-Sco"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -342,6 +350,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsM-6K-rRI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2547.826086956522" y="65.625"/>
+        </scene>
+        <!--Orders Screen View Controller-->
+        <scene sceneID="BiC-1A-EC2">
+            <objects>
+                <viewController id="NZe-Kj-u7p" customClass="OrdersScreenViewController" customModule="ShopKartApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LNK-Cd-jPf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="a36-1u-Nny"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iPf-q5-PB6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VRh-ec-hcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3474" y="423"/>
+        </scene>
+        <!--Cart Screen View Controller-->
+        <scene sceneID="03l-4K-F8l">
+            <objects>
+                <viewController id="Uwf-kV-7I6" customClass="CartScreenViewController" customModule="ShopKartApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TgI-DA-6TW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eRW-Uo-RvP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ssK-nZ-FID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEr-hN-zGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3468" y="-242"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UOl-BT-pEv">

@@ -28,6 +28,8 @@ class HomeViewController: UIViewController, HomeDataRepository, CategoryClickedH
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    
                         
         homeDataRepoImpl.homeDataRepo = self
         homeDataRepoImpl.getAllProducts()

@@ -15,6 +15,10 @@ struct AppConstants {
     
     struct NavigationConstants{
         static var  CATEGORY_DETAIL_NAVIGATION =  "categoryDetailNavigation"
-
+    }
+    
+    struct RazorPayConstants{
+        static var RAZOR_PAY_KEY_ID = "rzp_test_PGqiLhD4gtEENE"
+        static var RAZOR_PAY_KEY_SECRET = "79krgK9JzkUAvoEtM99Yd1An"
     }
 }

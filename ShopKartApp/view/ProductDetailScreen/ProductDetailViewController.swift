@@ -35,6 +35,17 @@ class ProductDetailViewController : UIViewController, ProductDetailDataProtocol{
     
     @IBOutlet weak var ratingUsersCount: UILabel!
     
+    @IBAction func addToCartButtonHandler(_ sender: UIButton) {
+        
+//        self.performSegue(withIdentifier: "navigateToCartScreen", sender: self)
+    }
+    
+    @IBAction func buyNowButtonHandler(_ sender: UIButton) {
+//        self.performSegue(withIdentifier: "navigateToOrdersScreen", sender: self)
+    }
+    
+    
+    
     func getProductDetail(product: Product) {
         productTitleLabel.text = product.title
         productImage.loadImage(urlString: product.image)
@@ -44,6 +55,8 @@ class ProductDetailViewController : UIViewController, ProductDetailDataProtocol{
         ratingUsersCount.text = "\(product.rating.count) ratings"
         
         loadRatings(rating: product.rating.rate)
+        
+        FirebaseService.addProductToCart(product: product)
     }
     
     override func viewDidLoad() {

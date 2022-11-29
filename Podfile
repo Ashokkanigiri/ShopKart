@@ -9,5 +9,9 @@ target 'ShopKartApp' do
 
 pod 'Alamofire'
 pod 'Hero'
+pod 'razorpay-pod', '1.2.5'
+
+pod 'FirebaseAuth'
+pod 'FirebaseFirestore'
 
 end
